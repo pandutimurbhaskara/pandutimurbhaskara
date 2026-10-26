@@ -1,143 +1,100 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 220" width="100%" height="100%">
   <defs>
-    <linearGradient id="calcBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0C101C"/>
-      <stop offset="55%" stop-color="#13192B"/>
-      <stop offset="100%" stop-color="#1E162B"/>
-    </linearGradient>
+    <clipPath id="cardClip">
+      <rect width="1200" height="220" rx="14"/>
+    </clipPath>
 
-    <linearGradient id="swiftAccent" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#F97316"/>
-      <stop offset="50%" stop-color="#FB923C"/>
-      <stop offset="100%" stop-color="#F43F5E"/>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D1117"/>
+      <stop offset="100%" stop-color="#131926"/>
     </linearGradient>
 
     <linearGradient id="curveFill" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#F97316" stop-opacity="0.35"/>
+      <stop offset="0%" stop-color="#F97316" stop-opacity="0.28"/>
       <stop offset="100%" stop-color="#F97316" stop-opacity="0"/>
     </linearGradient>
 
-    <radialGradient id="orangeGlow" cx="82%" cy="50%" r="45%">
-      <stop offset="0%" stop-color="#F97316" stop-opacity="0.18"/>
-      <stop offset="100%" stop-color="#F97316" stop-opacity="0"/>
-    </radialGradient>
-
     <style>
-      .badge-cat { font: 700 11px 'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace; fill: #FB923C; letter-spacing: 1.8px; }
-      .card-title { font: 800 30px system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; fill: #F8FAFC; letter-spacing: -0.5px; }
-      .card-desc { font: 400 15px system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; fill: #CBD5E1; }
-      .feat-text { font: 500 13px system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; fill: #E2E8F0; }
-      .tag-text { font: 600 12px 'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace; fill: #FDBA74; }
-      .mono-ui { font: 600 11.5px 'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace; }
+      .repo-owner { font: 400 18px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; fill: #8B949E; }
+      .repo-name { font: 700 22px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; fill: #58A6FF; }
+      .desc { font: 400 14.5px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; fill: #C9D1D9; }
+      .meta { font: 500 12.5px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; fill: #8B949E; }
+      .pill { font: 500 12px 'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace; fill: #FDBA74; }
+      .mono-sm { font: 500 11px 'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace; }
     </style>
   </defs>
 
-  <!-- Card Background & Border -->
-  <rect width="1200" height="260" rx="18" fill="url(#calcBg)"/>
-  <rect width="1200" height="260" rx="18" fill="url(#orangeGlow)"/>
-  <rect x="0" y="0" width="6" height="260" rx="3" fill="url(#swiftAccent)"/>
-  <rect x="1" y="1" width="1198" height="258" rx="17" fill="none" stroke="#334155" stroke-width="1.5" stroke-opacity="0.75"/>
+  <g clip-path="url(#cardClip)">
+    <rect width="1200" height="220" fill="url(#bg)"/>
+    <rect x="0" y="0" width="4" height="220" fill="#F97316"/>
 
-  <!-- Left Content -->
-  <g transform="translate(44, 34)">
-    <!-- Category Header -->
-    <rect x="0" y="0" width="272" height="24" rx="6" fill="#F97316" fill-opacity="0.14" stroke="#F97316" stroke-opacity="0.4" stroke-width="1"/>
-    <text x="12" y="16" class="badge-cat">NATIVE MACOS &amp; IOS · SWIFT 6.0</text>
+    <!-- Left Content -->
+    <g transform="translate(36, 32)">
+      <!-- Repo Icon & Title -->
+      <g transform="translate(0, 0)">
+        <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z" fill="#8B949E" transform="translate(0, 4) scale(1.2)"/>
+        <text x="28" y="19" class="repo-owner">pandutimurbhaskara / <tspan class="repo-name">CalculatorSwift</tspan></text>
+      </g>
 
-    <!-- Title -->
-    <text x="0" y="62" class="card-title">CalculatorSwift <tspan font-size="18" font-weight="500" fill="#94A3B8">(CalculatorPro)</tspan></text>
+      <!-- Natural Description -->
+      <text x="0" y="54" class="desc">
+        Scientific calculator for macOS &amp; iOS built from scratch in Swift 6 and SwiftUI.
+      </text>
+      <text x="0" y="76" class="desc">
+        Includes a custom BigInt/BigDecimal/Rational math engine, expression parser, and workspaces
+      </text>
+      <text x="0" y="98" class="desc">
+        for matrices, calculus, statistics, and 2D/3D function plotting.
+      </text>
 
-    <!-- Description -->
-    <text x="0" y="92" class="card-desc">
-      Scientific computation suite &amp; custom math engine in SwiftUI with arbitrary-precision arithmetic,
-    </text>
-    <text x="0" y="114" class="card-desc">
-      interactive 2D/3D function graphing, symbolic/numeric calculus, linear algebra, and statistical workspaces.
-    </text>
+      <!-- Bottom Language & Feature Pills -->
+      <g transform="translate(0, 128)">
+        <circle cx="6" cy="13" r="6" fill="#F05138"/>
+        <text x="18" y="17.5" class="meta">Swift 6.0</text>
 
-    <!-- Feature Grid -->
-    <g transform="translate(0, 134)">
-      <circle cx="8" cy="-4" r="3.5" fill="#FB923C"/>
-      <text x="20" y="0" class="feat-text"><tspan font-weight="700" fill="#FFF">BigNum Engine:</tspan> Custom BigInt, BigDecimal &amp; Rational</text>
+        <rect x="92" y="0" width="78" height="26" rx="6" fill="#161F30" stroke="#30363D" stroke-width="1"/>
+        <text x="131" y="17" text-anchor="middle" class="pill">SwiftUI</text>
 
-      <circle cx="380" cy="-4" r="3.5" fill="#FB923C"/>
-      <text x="392" y="0" class="feat-text"><tspan font-weight="700" fill="#FFF">2D &amp; 3D Graphing:</tspan> Real-time surface &amp; curve plots</text>
+        <rect x="178" y="0" width="120" height="26" rx="6" fill="#161F30" stroke="#30363D" stroke-width="1"/>
+        <text x="238" y="17" text-anchor="middle" class="pill">BigNum Engine</text>
 
-      <circle cx="8" cy="22" r="3.5" fill="#FB923C"/>
-      <text x="20" y="26" class="feat-text"><tspan font-weight="700" fill="#FFF">6 Workspaces:</tspan> Calc, Matrix, Calculus, Stats, 2D, 3D</text>
+        <rect x="306" y="0" width="132" height="26" rx="6" fill="#161F30" stroke="#30363D" stroke-width="1"/>
+        <text x="372" y="17" text-anchor="middle" class="pill">2D &amp; 3D Graphs</text>
 
-      <circle cx="380" cy="22" r="3.5" fill="#FB923C"/>
-      <text x="392" y="26" class="feat-text"><tspan font-weight="700" fill="#FFF">Parser &amp; Units:</tspan> Full AST lexer/parser &amp; unit system</text>
+        <rect x="446" y="0" width="150" height="26" rx="6" fill="#161F30" stroke="#30363D" stroke-width="1"/>
+        <text x="521" y="17" text-anchor="middle" class="pill">Matrix &amp; Calculus</text>
+      </g>
     </g>
 
-    <!-- Tech Stack Pills -->
-    <g transform="translate(0, 178)">
-      <rect x="0" y="0" width="88" height="26" rx="6" fill="#1E293B" stroke="#475569" stroke-width="1"/>
-      <text x="44" y="17" text-anchor="middle" class="tag-text">Swift 6.0</text>
+    <!-- Right Preview Panel -->
+    <g transform="translate(836, 22)">
+      <rect width="336" height="176" rx="10" fill="#090D14" stroke="#21262D" stroke-width="1.2"/>
 
-      <rect x="98" y="0" width="84" height="26" rx="6" fill="#1E293B" stroke="#475569" stroke-width="1"/>
-      <text x="140" y="17" text-anchor="middle" class="tag-text">SwiftUI</text>
+      <!-- Workspace Header -->
+      <rect x="10" y="10" width="316" height="24" rx="5" fill="#111722"/>
+      <text x="20" y="26" class="mono-sm" fill="#8B949E">Calc  ·  Matrix  ·  Calculus  ·  Stats</text>
+      <text x="316" y="26" text-anchor="end" class="mono-sm" fill="#FB923C">Graph 2D/3D</text>
 
-      <rect x="192" y="0" width="124" height="26" rx="6" fill="#1E293B" stroke="#475569" stroke-width="1"/>
-      <text x="254" y="17" text-anchor="middle" class="tag-text">Swift Package</text>
+      <!-- Plot Area -->
+      <g transform="translate(10, 42)">
+        <rect width="316" height="88" rx="6" fill="#0D131F" stroke="#1E293B" stroke-width="1"/>
+        <line x1="0" y1="44" x2="316" y2="44" stroke="#1E293B"/>
+        <line x1="158" y1="0" x2="158" y2="88" stroke="#1E293B"/>
 
-      <rect x="326" y="0" width="142" height="26" rx="6" fill="#1E293B" stroke="#475569" stroke-width="1"/>
-      <text x="397" y="17" text-anchor="middle" class="tag-text">macOS 14 / iOS 17</text>
+        <path d="M 0 70 C 45 70, 75 30, 115 30 C 155 30, 175 74, 215 74 C 255 74, 280 34, 316 34 L 316 88 L 0 88 Z" fill="url(#curveFill)"/>
+        <path d="M 0 70 C 45 70, 75 30, 115 30 C 155 30, 175 74, 215 74 C 255 74, 280 34, 316 34" fill="none" stroke="#FB923C" stroke-width="2.2"/>
+        <circle cx="115" cy="30" r="3.5" fill="#F97316" stroke="#FFF" stroke-width="1.2"/>
+        <text x="10" y="17" class="mono-sm" fill="#FDBA74">f(x) = sin(x) · e^(-x/5)</text>
+      </g>
 
-      <rect x="478" y="0" width="120" height="26" rx="6" fill="#1E293B" stroke="#475569" stroke-width="1"/>
-      <text x="538" y="17" text-anchor="middle" class="tag-text">XCTest Suite</text>
-    </g>
-  </g>
-
-  <!-- Right Visual Preview: Mini Scientific & 2D/3D Graph UI -->
-  <g transform="translate(825, 26)">
-    <rect width="340" height="208" rx="14" fill="#090D16" stroke="#334155" stroke-width="1.2"/>
-
-    <!-- Top Workspace Tabs -->
-    <rect x="10" y="10" width="320" height="26" rx="7" fill="#111827"/>
-    <rect x="14" y="13" width="56" height="20" rx="5" fill="#1E293B"/>
-    <text x="42" y="27" text-anchor="middle" class="mono-ui" fill="#94A3B8">Calc</text>
-    <rect x="74" y="13" width="64" height="20" rx="5" fill="#1E293B"/>
-    <text x="106" y="27" text-anchor="middle" class="mono-ui" fill="#94A3B8">Matrix</text>
-    <rect x="142" y="13" width="72" height="20" rx="5" fill="#1E293B"/>
-    <text x="178" y="27" text-anchor="middle" class="mono-ui" fill="#94A3B8">Calculus</text>
-    <rect x="218" y="13" width="106" height="20" rx="5" fill="#F97316" fill-opacity="0.22" stroke="#F97316" stroke-width="1"/>
-    <text x="271" y="27" text-anchor="middle" class="mono-ui" fill="#FDBA74">Graph 2D/3D</text>
-
-    <!-- Plot Coordinate Area -->
-    <g transform="translate(14, 46)">
-      <rect width="312" height="110" rx="8" fill="#0D1322" stroke="#1E293B" stroke-width="1"/>
-      <!-- Grid lines -->
-      <line x1="0" y1="27.5" x2="312" y2="27.5" stroke="#1E293B" stroke-dasharray="3,3"/>
-      <line x1="0" y1="55" x2="312" y2="55" stroke="#334155"/>
-      <line x1="0" y1="82.5" x2="312" y2="82.5" stroke="#1E293B" stroke-dasharray="3,3"/>
-      <line x1="78" y1="0" x2="78" y2="110" stroke="#1E293B" stroke-dasharray="3,3"/>
-      <line x1="156" y1="0" x2="156" y2="110" stroke="#334155"/>
-      <line x1="234" y1="0" x2="234" y2="110" stroke="#1E293B" stroke-dasharray="3,3"/>
-
-      <!-- Secondary 3D/Cosine Wave -->
-      <path d="M 0 75 Q 39 15, 78 55 T 156 55 T 234 55 T 312 35" fill="none" stroke="#38BDF8" stroke-width="2" stroke-opacity="0.7"/>
-
-      <!-- Primary Sine/Damped Function Curve -->
-      <path d="M 0 85 C 40 85, 65 20, 105 20 C 145 20, 165 90, 205 90 C 245 90, 275 30, 312 30 L 312 110 L 0 110 Z" fill="url(#curveFill)"/>
-      <path d="M 0 85 C 40 85, 65 20, 105 20 C 145 20, 165 90, 205 90 C 245 90, 275 30, 312 30" fill="none" stroke="#FB923C" stroke-width="2.5"/>
-
-      <!-- Tangents / Critical Points -->
-      <circle cx="105" cy="20" r="4" fill="#F97316" stroke="#FFF" stroke-width="1.5"/>
-      <circle cx="205" cy="90" r="4" fill="#F97316" stroke="#FFF" stroke-width="1.5"/>
-
-      <!-- Formula Overlay -->
-      <rect x="8" y="8" width="164" height="22" rx="4" fill="#090D16" fill-opacity="0.85" stroke="#334155" stroke-width="0.8"/>
-      <text x="16" y="23" class="mono-ui" fill="#FDBA74">f(x) = sin(x)·e^(-x/5)</text>
+      <!-- Bottom Readout -->
+      <g transform="translate(10, 138)">
+        <rect width="316" height="28" rx="5" fill="#111722"/>
+        <text x="12" y="18" class="mono-sm" fill="#C9D1D9">∫₀^π sin(x) dx = <tspan fill="#34D399">2</tspan></text>
+        <text x="304" y="18" text-anchor="end" class="mono-sm" fill="#58A6FF">macOS 14+ · iOS 17+</text>
+      </g>
     </g>
 
-    <!-- Bottom Symbolic / BigNum Readout Bar -->
-    <g transform="translate(14, 164)">
-      <rect width="196" height="32" rx="7" fill="#111827" stroke="#1E293B" stroke-width="1"/>
-      <text x="10" y="20" class="mono-ui" fill="#E2E8F0">∫₀^π sin(x)dx = <tspan fill="#34D399">2.000000</tspan></text>
-
-      <rect x="204" y="0" width="108" height="32" rx="7" fill="#111827" stroke="#1E293B" stroke-width="1"/>
-      <text x="258" y="20" text-anchor="middle" class="mono-ui" fill="#38BDF8">det(A) = 42</text>
-    </g>
+    <rect x="0.75" y="0.75" width="1198.5" height="218.5" rx="13.25" fill="none" stroke="#30363D" stroke-width="1.5"/>
   </g>
 </svg>
