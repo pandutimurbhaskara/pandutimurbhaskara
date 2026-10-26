@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" width="100%" height="100%">
+  <defs>
+    <linearGradient id="tycoonBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D111E"/>
+      <stop offset="55%" stop-color="#15192D"/>
+      <stop offset="100%" stop-color="#22172C"/>
+    </linearGradient>
+
+    <linearGradient id="pastelAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F472B6"/>
+      <stop offset="50%" stop-color="#C084FC"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+
+    <radialGradient id="pinkGlow" cx="82%" cy="50%" r="45%">
+      <stop offset="0%" stop-color="#F472B6" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#F472B6" stop-opacity="0"/>
+    </radialGradient>
+
+    <style>
+      .badge-cat { font: 700 11px 'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace; fill: #F472B6; letter-spacing: 1.8px; }
+      .card-title { font: 800 30px system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; fill: #F8FAFC; letter-spacing: -0.5px; }
+      .card-desc { font: 400 15px system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; fill: #CBD5E1; }
+      .feat-text { font: 500 13px system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; fill: #E2E8F0; }
+      .tag-text { font: 600 12px 'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace; fill: #F9A8D4; }
+      .mono-ui { font: 600 11.5px 'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace; }
+    </style>
+  </defs>
+
+  <!-- Card Background & Border -->
+  <rect width="1200" height="260" rx="18" fill="url(#tycoonBg)"/>
+  <rect width="1200" height="260" rx="18" fill="url(#pinkGlow)"/>
+  <rect x="0" y="0" width="6" height="260" rx="3" fill="url(#pastelAccent)"/>
+  <rect x="1" y="1" width="1198" height="258" rx="17" fill="none" stroke="#334155" stroke-width="1.5" stroke-opacity="0.75"/>
+
+  <!-- Left Content -->
+  <g transform="translate(44, 34)">
+    <!-- Category Header -->
+    <rect x="0" y="0" width="296" height="24" rx="6" fill="#F472B6" fill-opacity="0.14" stroke="#F472B6" stroke-opacity="0.4" stroke-width="1"/>
+    <text x="12" y="16" class="badge-cat">3D WEB SIMULATION GAME · THREE.JS</text>
+
+    <!-- Title -->
+    <text x="0" y="62" class="card-title">pastel-tycoon <tspan font-size="18" font-weight="500" fill="#94A3B8">(OpenTTD × Package Inc)</tspan></text>
+
+    <!-- Description -->
+    <text x="0" y="92" class="card-desc">
+      Browser transport &amp; logistics tycoon combining OpenTTD's road, rail, and block-signaling mechanics
+    </text>
+    <text x="0" y="114" class="card-desc">
+      with a soft low-poly pastel 3D aesthetic, chunked meshes, and a live procedural Web Audio jukebox.
+    </text>
+
+    <!-- Feature Grid -->
+    <g transform="translate(0, 134)">
+      <circle cx="8" cy="-4" r="3.5" fill="#F472B6"/>
+      <text x="20" y="0" class="feat-text"><tspan font-weight="700" fill="#FFF">Rail &amp; Signals:</tspan> Track reservation, loops &amp; junctions</text>
+
+      <circle cx="380" cy="-4" r="3.5" fill="#C084FC"/>
+      <text x="392" y="0" class="feat-text"><tspan font-weight="700" fill="#FFF">Supply Chains:</tspan> Mines, sawmills, power plants &amp; towns</text>
+
+      <circle cx="8" cy="22" r="3.5" fill="#F472B6"/>
+      <text x="20" y="26" class="feat-text"><tspan font-weight="700" fill="#FFF">Decoupled Sim:</tspan> Pure TypeScript sim core + Vitest suite</text>
+
+      <circle cx="380" cy="22" r="3.5" fill="#C084FC"/>
+      <text x="392" y="26" class="feat-text"><tspan font-weight="700" fill="#FFF">Live Jukebox:</tspan> 5 procedural pastel synth tracks</text>
+    </g>
+
+    <!-- Tech Stack Pills -->
+    <g transform="translate(0, 178)">
+      <rect x="0" y="0" width="98" height="26" rx="6" fill="#1E293B" stroke="#475569" stroke-width="1"/>
+      <text x="49" y="17" text-anchor="middle" class="tag-text">TypeScript</text>
+
+      <rect x="108" y="0" width="88" height="26" rx="6" fill="#1E293B" stroke="#475569" stroke-width="1"/>
+      <text x="152" y="17" text-anchor="middle" class="tag-text">Three.js</text>
+
+      <rect x="206" y="0" width="68" height="26" rx="6" fill="#1E293B" stroke="#475569" stroke-width="1"/>
+      <text x="240" y="17" text-anchor="middle" class="tag-text">Vite</text>
+
+      <rect x="284" y="0" width="76" height="26" rx="6" fill="#1E293B" stroke="#475569" stroke-width="1"/>
+      <text x="322" y="17" text-anchor="middle" class="tag-text">Vitest</text>
+
+      <rect x="370" y="0" width="114" height="26" rx="6" fill="#1E293B" stroke="#475569" stroke-width="1"/>
+      <text x="427" y="17" text-anchor="middle" class="tag-text">Web Audio API</text>
+
+      <rect x="494" y="0" width="106" height="26" rx="6" fill="#1E293B" stroke="#475569" stroke-width="1"/>
+      <text x="547" y="17" text-anchor="middle" class="tag-text">Cloudflare</text>
+    </g>
+  </g>
+
+  <!-- Right Visual Preview: Isometric Pastel Logistics Scene & HUD -->
+  <g transform="translate(825, 26)">
+    <rect width="340" height="208" rx="14" fill="#0B0F1A" stroke="#334155" stroke-width="1.2"/>
+
+    <!-- Top Game HUD Bar -->
+    <rect x="10" y="10" width="320" height="26" rx="7" fill="#111827"/>
+    <text x="22" y="27" class="mono-ui" fill="#34D399">+$14,820</text>
+    <text x="102" y="27" class="mono-ui" fill="#94A3B8">Yr 3 · M 08</text>
+    <rect x="206" y="13" width="118" height="20" rx="5" fill="#F472B6" fill-opacity="0.2" stroke="#F472B6" stroke-width="1"/>
+    <text x="265" y="27" text-anchor="middle" class="mono-ui" fill="#F9A8D4">♪ Pastel Track 2</text>
+
+    <!-- Pastel Viewport Map -->
+    <g transform="translate(14, 46)">
+      <rect width="312" height="110" rx="8" fill="#161F33" stroke="#1E293B" stroke-width="1"/>
+
+      <!-- Isometric Grid Lines -->
+      <line x1="0" y1="35" x2="312" y2="35" stroke="#1E293B"/>
+      <line x1="0" y1="75" x2="312" y2="75" stroke="#1E293B"/>
+      <line x1="80" y1="0" x2="80" y2="110" stroke="#1E293B"/>
+      <line x1="160" y1="0" x2="160" y2="110" stroke="#1E293B"/>
+      <line x1="240" y1="0" x2="240" y2="110" stroke="#1E293B"/>
+
+      <!-- Rail Track Path -->
+      <path d="M 32 82 L 130 82 Q 156 82, 156 56 L 156 32 L 276 32" fill="none" stroke="#94A3B8" stroke-width="5" stroke-linecap="round"/>
+      <path d="M 32 82 L 130 82 Q 156 82, 156 56 L 156 32 L 276 32" fill="none" stroke="#334155" stroke-width="3" stroke-dasharray="4,5"/>
+
+      <!-- Station A: Forest / Sawmill (Pastel Mint) -->
+      <rect x="18" y="64" width="38" height="26" rx="5" fill="#6EE7B7" stroke="#10B981" stroke-width="1.5"/>
+      <text x="37" y="81" text-anchor="middle" class="mono-ui" fill="#064E3B">WOOD</text>
+
+      <!-- Station B: Town / Power Plant (Pastel Coral/Lavender) -->
+      <rect x="252" y="16" width="44" height="26" rx="5" fill="#C4B5FD" stroke="#8B5CF6" stroke-width="1.5"/>
+      <text x="274" y="33" text-anchor="middle" class="mono-ui" fill="#2E1065">TOWN</text>
+
+      <!-- Pastel Train Consist on Track -->
+      <rect x="78" y="74" width="26" height="15" rx="4" fill="#F472B6" stroke="#FFF" stroke-width="1.2"/>
+      <rect x="108" y="74" width="22" height="15" rx="3" fill="#FBCFE8" stroke="#F472B6" stroke-width="1"/>
+
+      <!-- One-Way Block Signal -->
+      <circle cx="156" cy="54" r="6" fill="#0F172A" stroke="#34D399" stroke-width="1.5"/>
+      <circle cx="156" cy="54" r="2.5" fill="#34D399"/>
+
+      <!-- Floating Delivery Profit Badge -->
+      <rect x="184" y="54" width="76" height="22" rx="5" fill="#064E3B" fill-opacity="0.9" stroke="#34D399" stroke-width="1"/>
+      <text x="222" y="69" text-anchor="middle" class="mono-ui" fill="#6EE7B7">+$420 Cargo</text>
+    </g>
+
+    <!-- Bottom Toolbar Preview -->
+    <g transform="translate(14, 164)">
+      <rect width="312" height="32" rx="7" fill="#111827" stroke="#1E293B" stroke-width="1"/>
+      <text x="14" y="20" class="mono-ui" fill="#94A3B8">[2] Road</text>
+      <text x="82" y="20" class="mono-ui" fill="#F9A8D4">[3] Rail</text>
+      <text x="144" y="20" class="mono-ui" fill="#7DD3FC">[5] Station</text>
+      <text x="228" y="20" class="mono-ui" fill="#6EE7B7">[8] Signal</text>
+    </g>
+  </g>
+</svg>
